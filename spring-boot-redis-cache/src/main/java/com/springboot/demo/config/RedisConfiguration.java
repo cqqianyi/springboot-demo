@@ -1,4 +1,4 @@
-package com.km.config;
+package com.springboot.demo.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
@@ -45,11 +45,17 @@ public class RedisConfiguration {
             }
         };
     }
+
+    /**
+     * 配置缓存
+     * @param redisTemplate
+     * @return
+     */
     @Bean
     public CacheManager cacheManager(RedisTemplate redisTemplate) {
         RedisCacheManager manager = new RedisCacheManager(redisTemplate);
         manager.setUsePrefix(true);
-        RedisCachePrefix cachePrefix = new RedisPrefix("redis_prefix_");
+        RedisCachePrefix cachePrefix = new RedisPrefix();
         manager.setCachePrefix(cachePrefix);
         // 整体缓存过期时间
         manager.setDefaultExpiration(3600L);
@@ -60,6 +66,11 @@ public class RedisConfiguration {
         return manager;
     }
 
+    /**
+     * 配置RedisTemplate
+     * @param factory
+     * @return
+     */
     @Bean
     public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
         StringRedisTemplate template = new StringRedisTemplate(factory);

@@ -1,8 +1,8 @@
-package com.km.service.impl;
+package com.springboot.demo.service.impl;
 
-import com.km.entity.Info;
-import com.km.entity.User;
-import com.km.service.UserService;
+import com.springboot.demo.entity.Info;
+import com.springboot.demo.entity.User;
+import com.springboot.demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
@@ -13,10 +13,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 /**
- * <p></p>
- * Created by zhezhiyong@163.com on 2017/9/21.
+ * @author qianyi
  */
 @Service
 @Slf4j

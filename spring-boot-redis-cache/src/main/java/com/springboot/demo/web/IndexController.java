@@ -1,8 +1,8 @@
-package com.km.web;
+package com.springboot.demo.web;
 
 import com.google.common.collect.ImmutableMap;
-import com.km.entity.User;
-import com.km.service.UserService;
+import com.springboot.demo.entity.User;
+import com.springboot.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

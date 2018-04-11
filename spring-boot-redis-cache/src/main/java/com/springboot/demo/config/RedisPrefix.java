@@ -1,4 +1,4 @@
-package com.km.config;
+package com.springboot.demo.config;
 
 import org.springframework.data.redis.cache.RedisCachePrefix;
 import org.springframework.data.redis.serializer.RedisSerializer;

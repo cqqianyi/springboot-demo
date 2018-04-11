@@ -1,4 +1,4 @@
-package com.km.entity;
+package com.springboot.demo.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

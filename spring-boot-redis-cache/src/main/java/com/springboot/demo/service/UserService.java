@@ -1,6 +1,6 @@
-package com.km.service;
+package com.springboot.demo.service;
 
-import com.km.entity.User;
+import com.springboot.demo.entity.User;
 
 import java.util.List;
 

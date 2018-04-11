@@ -1,0 +1,29 @@
+server:
+  port: 8080
+spring:
+    application:
+        name: spring-boot-demo
+    datasource:
+        testOnBorrow: true
+        validationQuery: "SELECT 1"
+        driverClassName: net.sf.log4jdbc.DriverSpy
+        url: jdbc:log4jdbc:mysql://localhost:3306/spring_boot_demo?createDatabaseIfNotExist=true&useUnicode=true&useUnicode=true&characterEncoding=utf8&autoReconnect=true&verifyServerCertificate=false&useSSL=false&sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false
+        name:
+        username: root
+        password:
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL57InnoDBDialect
+        database: MYSQL
+        show_sql: false
+        properties:
+          jadira.usertype.autoRegisterUserTypes: true
+        hibernate:
+            ddl-auto: update
+endpoints:
+  actuator:
+    enabled: true
+    sensitive: true
+    path: /test
+management:
+  security:
+    enabled: false

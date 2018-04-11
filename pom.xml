@@ -14,6 +14,9 @@
 	<modules>
 		<module>spring-boot-redis-cache</module>
 		<module>spring-boot-custom-annotation</module>
+		<module>spring-boot-full-exception</module>
+		<module>spring-boot-interceptor</module>
+		<module>spring-boot-upload-file</module>
 	</modules>
 
 	<properties>
