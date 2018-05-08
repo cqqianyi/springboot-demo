@@ -18,6 +18,7 @@
 		<module>spring-boot-interceptor</module>
 		<module>spring-boot-upload-file</module>
 		<module>spring-boot-wechat-platform</module>
+		<module>spring-boot-annation</module>
 	</modules>
 
 	<properties>
